@@ -7,5 +7,9 @@ export interface ButtonProps {
 }
 
 export const Button = ({ label, onClick }: ButtonProps): JSX.Element => {
-  return <ThemeButton onClick={onClick}>{label}</ThemeButton>
+  return (
+    <ThemeButton variant="primary" onClick={onClick}>
+      {label}
+    </ThemeButton>
+  )
 }

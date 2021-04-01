@@ -27,10 +27,19 @@ export const blogTheme: Theme = {
   },
   buttons: {
     primary: {
-      color: 'black',
+      color: 'background',
       bg: 'primary',
+      '&:hover': {
+        bg: 'text',
+      },
+    },
+    secondary: {
+      color: 'background',
+      bg: 'secondary',
     },
   },
+
+  // below apply only to MDX documents
   styles: {
     // li: {
     //   // code: {
